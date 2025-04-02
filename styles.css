@@ -24,6 +24,10 @@
 
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 
 
 @font-face {
@@ -40,13 +44,13 @@
 
 .text-one {
     font-family: robotoBold;
-    font-size: 56px;
+    font-size: 88px;
     letter-spacing: 0px;
 } 
 
 .text-mobile-one {
     font-family: robotoBold;
-    font-size: 88px;
+    font-size: 50px;
     letter-spacing: 0px;
 }
 
@@ -69,4 +73,41 @@
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0px;
+}
+
+/* Styles */
+
+body {
+    margin: 0;
+}
+
+main {
+    padding: var(--space300);
+    color: var(--blue-800);
+}
+
+ul {
+    list-style-image: url("assets/images/icon-list.svg");
+    padding: 0;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li  {
+    
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: var(--space200) var(--space300);
+    border-radius: 10px;
+    margin: var(--space100) 0 var(--space200);
+}
+
+button {
+    background-color: var(--blue-800);
+    color: var(--white);
 }
