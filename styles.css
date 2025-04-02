@@ -1,0 +1,72 @@
+:root {
+    /* Colors */
+
+    --white: #FFFFFF;
+    --grey: #949494;
+    --blue-700: #36384D;
+    --blue-800: #242742;
+    --red: #FF6155;
+    --gradient-4: linear-gradient(#FF6A3A, #FF527B);
+
+
+   /* Spacing */
+
+    --space100: 8px;
+    --space200: 16px;
+    --space300: 24px;
+    --space400: 32px;
+    --space500: 40px;
+    --space600: 48px;
+    --space800: 64px;
+    --space900: 72px;
+    --space1300: 104px;
+
+
+}
+
+
+
+@font-face {
+    font-family: robotoBold;
+    src: url(assets/fonts/Roboto-Bold.ttf)
+}
+
+@font-face {
+    font-family: robotoReg;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+ /* Text Presets */
+
+.text-one {
+    font-family: robotoBold;
+    font-size: 56px;
+    letter-spacing: 0px;
+} 
+
+.text-mobile-one {
+    font-family: robotoBold;
+    font-size: 88px;
+    letter-spacing: 0px;
+}
+
+.text-two-bold {
+    font-family: robotoBold;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.text-two {
+    font-family: robotoReg;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.text-three {
+    font-family: robotoBold;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
