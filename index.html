@@ -25,10 +25,14 @@
       <li>Measuring to ensure updates are a success</li>
       <li>And much more!</li>
     </ul>
-    <form>
-      <label class="text-three" for="email">Email address</label>
-      <input class="text-two" type="email" name="email" placeholder="email@company.com">
-      <button class="text-two-bold">Subscribe to monthly newsletter</button>
+    <form id="form">
+      <div id="label-wrap">
+        <label class="text-three" for="email">Email address</label><span id="error" class="text-three hidden">Valid email required</span>
+      </div>
+        
+      <!-- pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b" -->
+      <input id="email" class="text-two" type="email" name="email" placeholder="email@company.com"  required >
+      <button id="sub-btn" class="text-two-bold">Subscribe to monthly newsletter</button>
     </form>
   </main>
   <!-- Sign-up form end -->

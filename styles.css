@@ -112,9 +112,31 @@ input, button {
     margin: var(--space100) 0 var(--space200);
 }
 
-button {
+#label-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+#email:user-invalid {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+}
+
+#error {
+    color: var(--red);
+}
+
+.hidden {
+    display: none;
+}
+
+#sub-btn {
     background-color: var(--blue-800);
     color: var(--white);
+}
+
+#sub-btn:active {
+    background: var(--gradient-4);
 }
 
 /* Typography */
