@@ -86,6 +86,7 @@
 body {
     margin: 0;
     min-height: 100vh;
+    position: relative;
     
 }
 
@@ -150,9 +151,12 @@ input, button {
     background: var(--gradient-4);
 }
 
+#success-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 #success {
     height: 100vh;
-    margin-top: var(--space400);
     padding: var(--space300);
     display: flex;
     flex-direction: column;
@@ -177,6 +181,10 @@ h1 {
     margin-bottom: var(--space100);
 }
 
+h2 {
+    margin: 0;
+}
+
 
 /* Images */
 
@@ -196,6 +204,7 @@ picture {
 
 #success-icon {
     width: 50px;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -203,6 +212,24 @@ picture {
         width: 92%;
         margin-top: var(--space300);
         border-radius: 24px;
+    }
+
+    #success {
+        height: initial;
+    }
+
+    #success-wrapper {
+        position: absolute;
+        
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0; 
+        right: 0; 
+        margin-inline: auto; 
+        background-color: #FF527B;
+        width: 400px;
+        height: 400px;
+        border-radius: 12px;
     }
 
 
