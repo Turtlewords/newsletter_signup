@@ -12,44 +12,46 @@
   
 </head>
 <body>
-  <picture>
-    <source media="(min-width: 1024px)" srcset="assets\images\illustration-sign-up-desktop.svg">
-    <img src="assets/images/illustration-sign-up-mobile.svg" alt="variety of screens and graphs">
-  </picture> 
-  <!-- Sign-up form start -->
-  <main>
-    <h1 class="text-mobile-one">Stay updated!</h1>
-    <p class="text-two">Join 60,000+ product managers receiving monthly updates on:</p>
-    <ul class="text-two">
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
-    <form id="form">
-      <div id="label-wrap">
-        <label class="text-three" for="email">Email address</label><span id="error" class="text-three hidden">Valid email required</span>
-      </div>
-        
-      <!-- pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b" -->
-      <input id="email" class="text-two" type="email" name="email" placeholder="email@company.com"  required >
-      <button id="sub-btn" class="text-two-bold">Subscribe to monthly newsletter</button>
-    </form>
-  </main>
-  <!-- Sign-up form end -->
-  
+  <div id="outer" >
+    <div id="container">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="assets\images\illustration-sign-up-desktop.svg">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="variety of screens and graphs">
+      </picture> 
+      <!-- Sign-up form start -->
+      <main>
+        <h1 class="text-mobile-one">Stay updated!</h1>
+        <p class="text-two">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="text-two">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form id="form">
+          <div id="label-wrap">
+            <label class="text-three" for="email">Email address</label><span id="error" class="text-three"></span>
+          </div>
+            
+          <!-- pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b" -->
+          <input id="email" class="text-two" type="text" name="email" placeholder="email@company.com">
+          <button id="sub-btn" class="text-two-bold">Subscribe to monthly newsletter</button>
+        </form>
+      </main>
+    <!-- Sign-up form end -->
+  </div>
+</div>
+<div id="success-wrapper" class="hidden">
+  <div id="success" >
+    <div id="success-top">
+      <img id="success-icon" src="assets/images/icon-success.svg" alt="checkmark">
+      <h2 class="text-success">Thanks for subscribing!</h2>
+      <p class="text-two">A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <button id="dismiss-Btn" class="text-two-bold">Dismiss message</button>
 
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
-  
+  </div>
+</div>
   <script src="index.js"></script>
 </body>
 </html>

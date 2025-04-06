@@ -75,10 +75,21 @@
     letter-spacing: 0px;
 }
 
+.text-success {
+    font-family: robotoBold;
+    font-size: 40px;
+    letter-spacing: 0px;
+}
+
 /* Styles */
 
 body {
     margin: 0;
+    min-height: 100vh;
+    
+}
+
+#container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +150,27 @@ input, button {
     background: var(--gradient-4);
 }
 
+#success {
+    height: 100vh;
+    margin-top: var(--space400);
+    padding: var(--space300);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#dismiss-Btn {
+    padding: var(--space200) var(--space300);
+    border-radius: 10px;
+    margin: var(--space100) 0 var(--space200);
+    background-color: var(--blue-800);
+    color: var(--white);
+}
+
+#dismiss-Btn:active {
+    background: var(--gradient-4);
+}
+
 /* Typography */
 
 h1 {
@@ -162,6 +194,10 @@ picture {
     
 }
 
+#success-icon {
+    width: 50px;
+}
+
 @media (min-width: 768px) {
     img, picture {
         width: 92%;
@@ -173,7 +209,7 @@ picture {
 }
 
 @media (min-width: 1024px) {
-    body {
+    #container {
         flex-direction: row-reverse;
         justify-content: center;
         gap: var(--space600);

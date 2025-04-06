@@ -1,17 +1,58 @@
+const outer= document.getElementById("outer");
 const subBtn = document.getElementById("sub-btn");
 const form = document.getElementById("form");
-const email = document.getElementById("email");
-const error = document.getElementById("error")
+const emailEl = document.getElementById("email");
+const error = document.getElementById("error");
+const dismissBtn = document.getElementById("dismiss-Btn");
+const success = document.getElementById("success-wrapper");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    
+
+    handleFormSubmit(e);
 })
 
-form.addEventListener("submit", (event) => {
-    if (email.validity.typeMismatch) {
-        error.classList.remove("hidden");
-    } else {
-        error.classList.add("hidden");
-    }
+dismissBtn.addEventListener("click", () => {
+    success.classList.toggle("hidden");
+    outer.classList.toggle("hidden");
 })
+
+
+function validateEmail(email) {
+    
+
+    if (!email) {
+        return "Valid email required";
+    }
+
+    const isValidEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+
+    if (!isValidEmail.test(email)) {
+        return "Please enter a valid email";
+    } 
+
+    return ""
+}
+
+function handleFormSubmit(e) {
+
+    e.preventDefault();
+
+
+    const email = emailEl.value;
+
+    const emailErrorMessage = validateEmail(email);
+
+    
+
+    if (emailErrorMessage) {
+        error.textContent = emailErrorMessage
+        console.log(emailErrorMessage)
+    } else {
+        error.textContent = "";
+        emailEl.value = "";
+        outer.classList.toggle("hidden");
+        success.classList.toggle("hidden");
+    }
+}
 
