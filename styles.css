@@ -145,9 +145,10 @@ input, button {
 #sub-btn {
     background-color: var(--blue-800);
     color: var(--white);
+    cursor: pointer;
 }
 
-#sub-btn:active {
+#sub-btn:hover, #sub-btn:active {
     background: var(--gradient-4);
 }
 
@@ -169,9 +170,12 @@ input, button {
     margin: var(--space100) 0 var(--space200);
     background-color: var(--blue-800);
     color: var(--white);
+    cursor: pointer;
 }
 
-#dismiss-Btn:active {
+
+
+#dissmiss-btn:hover, #dismiss-Btn:active {
     background: var(--gradient-4);
 }
 
