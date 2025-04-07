@@ -3,7 +3,7 @@ const subBtn = document.getElementById("sub-btn");
 const form = document.getElementById("form");
 const emailEl = document.getElementById("email");
 const error = document.getElementById("error");
-const dismissBtn = document.getElementById("dismiss-Btn");
+const dismissBtn = document.getElementById("dismiss-btn");
 const success = document.getElementById("success-wrapper");
 
 form.addEventListener("submit", (e) => {
