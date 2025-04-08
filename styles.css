@@ -94,13 +94,17 @@ body {
 
 #outer {
     min-height: 100vh;
+    
+    
 }
 
 #container {
-    min-height: 100vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--white);
+    
 }
 
 main {
@@ -112,7 +116,7 @@ main {
 
 ul {
     list-style-image: url("assets/images/icon-list.svg");
-    padding: 0 0 var(--space100);
+    padding: 0 0 4px;
     list-style-position: inside;
     display: flex;
     flex-direction: column;
@@ -120,7 +124,7 @@ ul {
 }
 
 li  {
-    padding: var(--space100) 0;
+    padding: 4px;
 }
 
 input, button {
@@ -220,8 +224,21 @@ picture {
 
 @media (min-width: 768px) {
 
+    body {
+        background-color: var(--blue-700);
+    }
+
+    #outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #container {
         justify-content: center;
+        width: 600px;
+        padding: var(--space200);
+        border-radius: 24px;
     }
 
     picture {
@@ -239,7 +256,7 @@ picture {
     }
 
     .text-mobile-one {
-        font-size: 64px;
+        font-size: 60px;
     }
 
     #success {
@@ -281,15 +298,14 @@ picture {
         justify-content: center;
         align-items: center;
         gap: var(--space600);
+        width: initial;
     }
 
     main {
         max-width: 500px;
     }
 
-    .text-mobile-one {
-        font-size: 64px;
-    }
+    
     picture, img {
         max-width: 500px;
         max-height: 600px;
