@@ -47,12 +47,14 @@ function handleFormSubmit(e) {
 
     if (emailErrorMessage) {
         error.textContent = emailErrorMessage
-        console.log(emailErrorMessage)
+        emailEl.classList.add("input-error")
     } else {
+        emailEl.classList.remove("input-error")
         error.textContent = "";
         emailEl.value = "";
         outer.classList.toggle("hidden");
         success.classList.toggle("hidden");
+        
     }
 }
 

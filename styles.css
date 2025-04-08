@@ -154,6 +154,7 @@ input, button {
     padding: 14px var(--space200);
     border-radius: 10px;
     margin: var(--space100) 0 var(--space200);
+    border: 1px solid var(--grey);
 }
 
 #label-wrap {
@@ -162,9 +163,10 @@ input, button {
     padding-left: 4px;
 }
 
-#email:user-invalid {
-    background-color: var(--red);
-    border: 2px solid var(--red);
+
+.input-error {
+    background-color: rgba(255, 97, 85, 0.3);
+    border: 1px solid var(--red);
 }
 
 #error {
@@ -172,7 +174,7 @@ input, button {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 #sub-btn {
@@ -320,13 +322,12 @@ picture {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        gap: var(--space300);
         width: initial;
     }
 
     main {
         max-width: 500px;
-        padding: var(--space400)
+        padding: var(--space500)
     }
 
     h1 {
@@ -337,6 +338,10 @@ picture {
         max-width: 500px;
         max-height: 600px;
         margin-top: 0;
+    }
+
+    .text-mobile-one {
+        font-size: 56px;
     }
 
     
