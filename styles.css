@@ -261,7 +261,7 @@ picture {
     #container {
         justify-content: center;
         width: 600px;
-        padding: 20px 8px;
+        padding: 24px 6px;
         border-radius: 24px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
@@ -327,7 +327,7 @@ picture {
 
     main {
         max-width: 500px;
-        padding: var(--space500)
+        padding: var(--space600)
     }
 
     h1 {
