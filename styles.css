@@ -107,6 +107,12 @@ body {
     
 }
 
+#banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 main {
     padding: var(--space100);
     color: var(--blue-800);
