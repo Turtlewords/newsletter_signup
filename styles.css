@@ -121,16 +121,31 @@ main {
 }
 
 ul {
-    list-style-image: url("assets/images/icon-list.svg");
+    /* list-style-image: url("assets/images/icon-list.svg"); */
     padding: 0 0 4px;
     list-style-position: inside;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: var(--space300);
+}
+
+ul li {
+    background-image: url("assets/images/icon-list.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 30px;
+    padding-left: 30px;
 }
 
 li  {
     padding: 4px;
+}
+
+li:before {
+    content: "";
+    margin-left: 6px;
 }
 
 input, button {
@@ -144,6 +159,7 @@ input, button {
 #label-wrap {
     display: flex;
     justify-content: space-between;
+    padding-left: 4px;
 }
 
 #email:user-invalid {
@@ -304,7 +320,7 @@ picture {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        gap: var(--space600);
+        gap: var(--space300);
         width: initial;
     }
 
